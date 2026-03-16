@@ -1,0 +1,59 @@
+Algoritmo Cálculo_nota_FIAP
+// Algoritmo para efetuar cálculo de notas com base no método da FIAP
+
+var
+
+	CP1: int
+	CP2: int
+	CP3: int
+	menorNota: int
+	media: int
+	// Aqui foram declarados quais serão os tipos de valores das variáveis
+
+	CP1: 0
+	CP2: 0
+	CP3: 0
+	menorNota: 0
+	media = 0
+	// Aqui foi atribuído o valor 0 para cada variável.
+
+Início
+
+	Escreva ("Programa para cálculo de notas da FIAP")
+	Escreva ("Insira o valor da nota do CheckPoint 01")
+	Escreva ("Insira o valor da nota do CheckPoint 02")
+	Escreva ("Insira o valor da nota do CheckPoint 03")
+
+	Leia (CP1)
+	Leia (CP2)
+	Leia (CP3)
+	// Aqui as notas foram inseridas pelo usuário e lidas pelo sistena
+
+	menorNOta = 
+
+	SE CP1 < CP2 e CP3
+	menorNota = CP1
+
+	SE CP2 < CP1 e CP3
+	menorNota = CP2
+
+	SENÃO menorNota = CP3
+	// Aqui foi calculado qual seria a menor nota
+
+	média =
+	SE menorNota = CP1
+	média = CP2 + CP3 / 2
+
+	SE menorNota = CP2
+	média = CP1 + CP3 / 2
+
+	SENÃO
+	média = CP2 + CP3 / 2
+	// Aqui foi calculada a média
+
+	Escreva ("A sua nota na FIAP é:")
+	Escreva (média)
+	// Aqui a média é exibida ao usuário.
+
+fim
+	
